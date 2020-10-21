@@ -18,50 +18,15 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <%- include('./includes/navbar.ejs') %>
+      
         <!-- /.navbar -->
         <!-- SideBar -->
-        <%- include('./includes/sidebar.ejs') %> 
+       
         <!-- /.SideBar -->
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper p-3">
-            <!-- Main content -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a>Welcome Back <%= user.name %> </a></li>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </div>
-
-            <div class="container">
-                  <div class="row justify-content-md-center">
-                    <div class="col-8 mt-4">
-                      <div class="card text-center shadow mb-5 bg-white rounded">
-                        <div class="card-header font-italic">
-                          Information
-                        </div>
-                        <div class="card-body">
-                          <p class="card-text"><%= user.name %> </p>
-                          <p class="card-text"><%= user.email %> </p>
-                          <p class="card-text"><%= user.phone %> </p>
-                          <p class="card-text"><%= user.role.name %> </p>
-                        </div>
-                        <div class="card-footer text-muted">
-                          <small>Created <%= moment(user.createdAt).fromNow(); %>, 
-                          edited <%= moment(user.updatedAt).fromNow(); %></small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div> 
-
-            <!-- /.content -->
+            <h1>Welcome back <%= user.name %> </h1>
         </div>
         <!-- Footer -->
         <%- include('./includes/footer.ejs') %>
