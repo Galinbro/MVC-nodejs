@@ -1,0 +1,52 @@
+
+
+tr:hover{
+    cursor:pointer;  
+  }
+
+  .table-blue, tr, td {
+    border: 1px solid #9EC3F8;
+    border-collapse: collapse;
+    border-spacing: 0; 
+}
+ 
+table.dataTable.no-footer {
+    border-bottom: 1px solid #9EC3F8;
+}
+ 
+#recrutier-table{
+    width:100%
+}
+ 
+ #recrutier-table th, #recrutier-table td {
+     border: 0px !important;
+}
+ 
+#recrutier-table th, #recrutier-table td{
+    border: 0px !important;
+    vertical-align: middle;
+}
+ 
+.info-box {
+    min-height: 50px;
+    margin-bottom: 0px !important;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+ 
+.color-blue {
+    color: #0066A0;
+}
+ 
+#recrutier-table_filter input{
+    border-color: #9EC3F8 !important;
+    border-radius: 5px;
+    background-color: white; 
+    border-width: 1px;
+    border-style: solid !important; 
+}
+.btn-outline-info {
+    color: #0066A0;
+    border-color: #0066A0;
+}

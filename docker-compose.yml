@@ -1,0 +1,52 @@
+version: '3.8'
+services:
+    mysql:
+        image: mysql:latest
+        restart: always
+        networks:
+            - backend
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=ignite
+            - MYSQL_PASSWORD=1gn1t3MX
+            - MYSQL_DATABASE=referidos
+        container_name: mysql-ignite
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        depends_on:
+            - mysql
+        networks:
+            - backend
+        ports:
+            - "30002:80"
+        environment:
+            - PMA_HOST=mysql-ignite
+            - PMA_PORT= 3306
+        volumes:
+            - /sessions
+        container_name: phpmyadmin-ignite
+    app:
+        build:
+            context: .
+        volumes:
+            - .:/usr/src/app
+        networks:
+            - frontend
+            - backend
+        environment:
+            - MYSQL_HOST=mysql-ignite
+            - MYSQL_USER=ignite
+            - MYSQL_PASS=1gn1t3MX
+            - MYSQL_DB=referidos
+        ports:
+            - 3000:8080
+        depends_on:
+            - mysql
+        command: sh -c "/wait && npm start"
+        # command: sh -c "/wait && npm run console"
+        container_name: nodejs-ignite
+networks:
+  frontend:
+  backend:
+volumes:
+    nodemodules: {}

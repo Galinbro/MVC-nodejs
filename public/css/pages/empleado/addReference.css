@@ -1,0 +1,112 @@
+.cardEm{
+    border-width: 1px;
+    padding: 1px;
+    margin: 4px;
+}
+.cardEm-in{
+    padding: 2px;
+}
+.card-bodyout{
+    padding: 3px;
+}
+.card-out{
+    border-width: 2px;
+}
+
+.breadcrumb-custom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 0rem;
+    list-style: none;
+    border-radius: 0.25rem;
+  }
+  
+  .breadcrumb-custom-item + .breadcrumb-custom-item {
+    padding-left: 0.5rem;
+  }
+  
+  .breadcrumb-custom-item + .breadcrumb-custom-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">";
+  }
+  
+  .breadcrumb-custom-item + .breadcrumb-custom-item:hover::before {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-custom-item + .breadcrumb-custom-item:hover::before {
+    text-decoration: none;
+  }
+  
+  .breadcrumb-custom-item.active {
+    color: #6c757d;
+  }
+  .btn-upload-cv, .btn-upload-cv:active {
+    background-color: #707070 !important;
+    color: white !important;
+    width: 80px;
+  }
+
+   .btn-upload-cv:hover {
+    background-color: #0066A0 !important;
+    border: 1px solid #0066A0 !important;
+    color: white !important;
+  }
+
+
+  .btn-agregar-vacante-create, .btn-agregar-vacante-create:active {
+      background-color: #0066A0 !important;
+      color: white !important;
+      width: 150px;
+  }
+  
+  .btn-agregar-vacante-cancel, .btn-agregar-vacante-cancel:active {
+      background-color: white !important;
+      color: #0066A0 !important;
+      border: 1px solid #0066A0 !important;
+  }
+  
+  .btn-agregar-vacante-create:hover {
+      background-color: #0074B8 !important;
+      border: 1px solid #0066A0 !important;
+      color: white !important;
+  }
+  
+  .btn-agregar-vacante-cancel:hover{
+      background-color: #DE4949 !important;
+      border: 1px solid #707070 !important;
+      color: white !important;
+  }
+  
+.badge-skill {
+  background-color: #0066A0 !important;
+  color: white !important;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.del-skill {
+  float: right;
+  font-size: 1.5rem;
+  color: #F2F2F2;
+  opacity: 1;
+}
+
+.del-skill:hover {
+  float: right;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 1;
+}
+
+.skill-description {
+  padding-bottom: 2px;
+}
+
+  .vacancy-subtitle {
+      border-bottom: solid 1px #0066A0;
+  }

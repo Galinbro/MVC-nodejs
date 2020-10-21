@@ -1,0 +1,80 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.badge-skill {
+  background-color: #0066A0 !important;
+  color: white !important;
+  font-size: 1rem;
+}
+
+.btn-agregar-vacante-create, .btn-agregar-vacante-create:active {
+	background-color: #0066A0 !important;
+	color: white !important;
+}
+
+.btn-agregar-vacante-cancel, .btn-agregar-vacante-cancel:active {
+	background-color: white !important;
+	color: #0066A0 !important;
+	border: 1px solid #0066A0 !important;
+}
+
+.btn-agregar-vacante-create:hover {
+	background-color: #0074B8 !important;
+	border: 1px solid #0066A0 !important;
+	color: white !important;
+}
+
+.btn-agregar-vacante-cancel:hover{
+	background-color: #DE4949 !important;
+	border: 1px solid #707070 !important;
+	color: white !important;
+}
+
+.badge-skill {
+  background-color: #0066A0 !important;
+  color: white !important;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.del-skill {
+  float: right;
+  font-size: 1.5rem;
+  color: #F2F2F2;
+  opacity: 1;
+}
+
+.del-skill:hover {
+  float: right;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 1;
+}
+
+.skill-description {
+  padding-bottom: 2px;
+}
+
+.profile-label {
+	border-top: solid 1px #0066A0;
+	margin-bottom: 10px;
+}
+
+.profile-comments-label {
+	border-bottom: solid 1px #0066A0;
+	margin-bottom: 10px;
+}
+
+.vacancy-subtitle {
+	border-bottom: solid 1px #0066A0;
+}

@@ -1,0 +1,21 @@
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: left;
+}
+ul.pagination {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: left;
+}
+.pagination2{
+    width: 100%;
+}
+.pullright{
+    float: right !important;
+}
+
+.badge-warning {
+    color: white;
+}

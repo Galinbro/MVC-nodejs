@@ -1,0 +1,37 @@
+#addButtonClass{
+  padding-bottom: 5%;
+  text-align: right;
+}
+#buttonAdd{
+  background-color: #0065a0e3;
+  border-color: #0066A0;
+}
+#buttonAdd:hover{
+  background-color: rgb(4, 132, 206) ;
+}
+#searchButton {
+    transition-duration: 0.4s;
+    border-color: #0066A0;
+    
+}
+#searchButton:hover {
+    background-color: #0066A0;
+  }
+#inputSearch{
+  border-color: #0066A0;  
+}
+#inputSearch:focus{
+  border-color: #7EB7F0
+}
+
+h1, h2, h3 , h4, h5{
+  color: #0066A0;
+}
+
+
+/* 
+.card-body {
+  padding: 0.5rem;
+
+
+} */

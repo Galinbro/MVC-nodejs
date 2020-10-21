@@ -1,0 +1,25 @@
+{
+  "name": "referidos-ignite-mx",
+  "version": "0.0.1",
+  "description": "Apoyar en el seguimiento de el bono de referidos version alpha",
+  "main": "index.js",
+  "scripts": {
+    "console": "node console",
+    "start": "nodemon -L index.js",
+    "start-server": "node index.js"
+  },
+  "author": "Emilio Galindo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mysql2": "^2.2.5",
+    "save": "^2.4.0",
+    "sequelize": "^6.3.5"
+  }
+}

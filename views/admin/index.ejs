@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%=pageTitle%></title>
+    <%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/pages/reclutador/vacancies.css">
+    <link rel="stylesheet" href="/css/pages/empleado/vacancies.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <%- include('../includes/navbar.ejs') %>
+        <!-- /.navbar -->
+        <!-- SideBar -->
+        <%- include('../includes/sidebar.ejs') %>
+        <!-- /.SideBar -->
+
+        <!-- Main content -->
+        <div class="content-wrapper p-3">
+            <!-- Main content -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a>Users</a></li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <div class="container mb-3">
+                <div class="row justify-content-end">
+                    <div class="col-4 text-right">
+                        <a href="/admin/add-user" class="btn btn-outline-primary">Add user</a>
+                    </div>
+                </div>
+            </div>
+            <section class="content">
+                <table id="my-referrals-fo" class="table table-bordered hover" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Created At</th>
+                            <th>Updated At</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (users.length > 0){ %> 
+                            <% users.forEach(u => { %>
+                                <tr>
+                                    <td><%= u.id %> </td>
+                                    <td><%= u.name %> </td>
+                                    <td><%= u.email %> </td>
+                                    <td><%= u.phone %> </td>
+                                    <td><%= moment(u.createdAt).fromNow(); %> </td>
+                                    <td><%= moment(u.updatedAt).fromNow(); %> </td>
+                                    <td><%= u.role.name %> </td>
+                                </tr>
+                            <% }); %>
+                        <% } %>
+                    </tbody>
+                </table>
+                <!-- End table -->
+            </section>
+            <!-- /.content-wrapper -->
+
+            <!-- /.content -->
+        </div>
+        <!-- end content -->
+
+        <!-- Footer -->
+        <%- include('../includes/footer.ejs') %>
+        <!-- end footer -->
+
+
+    </div>
+    <!-- ./wrapper -->
+
+
+    <!-- Scripts -->
+    <%- include('../includes/scripts.ejs') %>
+    <script src="/js/HR/cards.js"></script>
+    <!-- End Scripts-->
+
+</body>
+
+
+</html>

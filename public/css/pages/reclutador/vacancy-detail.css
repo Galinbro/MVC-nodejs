@@ -1,0 +1,108 @@
+/* begin tabla tracking */
+td i {
+    text-align:center;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  ul#track li, th{
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    padding: 0.6rem;
+    flex-direction: column;
+    margin-top: -2%;
+    margin-bottom: -2%;
+    margin-left: 2%;
+  }
+  
+  .table tr{
+    border: 1px solid #9EC3F8;
+    border-collapse: collapse;
+    border-spacing: 0
+  }
+  
+  .info-box{
+    min-height: 20px;
+  }
+  
+  ul#track li.active:after,
+  ul#track li.finished:after,
+  ul#track li.unfinished:after {
+    content: "";
+    position: absolute;
+    top: 49%;
+    right: -16px;
+    z-index: 0;
+  
+    background-color:#9EC3F8;
+    height: 2px;
+    width: 95%;
+  }
+  
+  #circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+  
+    border-radius: 50%;
+    border: 2px solid #58f;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -2px;
+  }
+  /* End tabla tracking */
+  
+  /* Start vacancy details */
+  #dog {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #editpencil {
+      margin-right: 30px;
+  }
+  
+  #editpencil a {
+      color: #0066A0;
+  }
+  
+  #dateposted {
+     align-self: flex-end ;
+  }
+  
+  #friendsicon {
+      font-size: 30px;
+      color: #0066A0;
+  }
+  
+  #flags {
+      color: #707070;
+  }
+  
+  #detailmore a{
+      color: #174A84;
+  }
+  
+  /* Small screen */
+  @media (max-width:800px){
+      #editpencil {
+          display: inline-block;
+          margin-left: 20px;
+      }
+  
+      #candidate {
+          display: inline-block;
+      }
+  
+      #detailmore {
+          margin-top: 30px;
+      }
+  }
