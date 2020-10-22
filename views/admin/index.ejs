@@ -59,7 +59,7 @@
                     <tbody>
                         <% if (users.length > 0){ %> 
                             <% users.forEach(u => { %>
-                                <tr>
+                                <tr onclick="window.location='/admin/edit-user/<%= u.id %>';">
                                     <td><%= u.id %> </td>
                                     <td><%= u.name %> </td>
                                     <td><%= u.email %> </td>

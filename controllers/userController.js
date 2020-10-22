@@ -45,3 +45,39 @@ exports.postCreate = (req, res, next) => {
   }
 };
 
+exports.getEdit = (req, res, next) => {
+  const _userId = req.params.id;
+
+  User.findByPk(_userId,{ include: 'role' })
+      .then(us => {
+          res.render('admin/edit', {
+          pageTitle: 'Edit user',
+          path: 'euser',
+          u: us,
+          user: req.user,
+        })
+      })
+      .catch(err => {
+        console.log(err);
+      });
+};
+
+exports.postEdit = (req, res, next) => {
+  const _userId = req.params.id;
+  data = req.body;
+  console.log(data)
+  User.findByPk(_userId)
+      .then(us => {
+        us.update({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          RoleId: data.RoleId
+        }).then(r => {
+              res.redirect('/admin')
+            })
+            .catch(err => {
+              console.log(err)
+            })
+          });
+};
